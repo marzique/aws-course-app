@@ -1,0 +1,31 @@
+# Distribution / packaging
+.Python
+env/
+venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+bin/
+
+__pycache__/
+.pytest_cache/
+
+# Serverless directories
+.serverless
+.dynamodb/
+
+.DS_Store
+
+.idea/
