@@ -1,18 +1,29 @@
+# https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml
 org: dennytarn
 app: aws-course-app
 service: aws-course-app
+
+package:
+  exclude:
+    - node_modules/**
+    - venv/**
 
 frameworkVersion: '2'
 
 provider:
   name: aws
   runtime: python3.8
+  region: eu-central-1
   lambdaHashingVersion: '20201221'
 
 functions:
   hello:
-    handler: handler.hello
+    handler: apps/users/handlers.echo
     events:
-      - httpApi:
-          path: /
+      - http:
+          path: /echo
           method: get
+
+plugins:
+  - serverless-offline
+  - serverless-python-requirements
