@@ -1,12 +1,11 @@
-# https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml
 org: dennytarn
 app: aws-course-app
 service: aws-course-app
 
 package:
   exclude:
-    - node_modules/**
-    - venv/**
+    - 'node_modules/**'
+    - 'venv/**'
 
 frameworkVersion: '2'
 
