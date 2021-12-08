@@ -22,10 +22,12 @@ bin/
 __pycache__/
 .pytest_cache/
 
+.DS_Store
+.idea/
+node_modules/
+
+# AWS
+aws/
 # Serverless directories
 .serverless
 .dynamodb/
-
-.DS_Store
-
-.idea/
